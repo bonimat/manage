@@ -1,0 +1,15 @@
+{
+  "name": "manage",
+  "version": "1.0.0",
+  "description": "",
+  "main": "manage.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Matteo Boni <bonimat@hotmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "yargs": "^17.0.1"
+  }
+}
