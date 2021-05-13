@@ -1,7 +1,11 @@
-exports.command = 'search -e <email>';
+exports.command = 'search [email]';
 exports.desc = "Search user's profile from email";
-exports.aliases = ['e', 'email'];
-exports.builder = {};
+exports.builder = {
+    email: {
+        alias: 'e',
+        nargs: 1,
+    },
+};
 exports.handler = function (argv) {
-    console.log('and the user is...', argv.dir);
+    console.log(argv);
 };

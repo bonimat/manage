@@ -1,3 +1,4 @@
 #!/usr/bin/env node
-const yargs = require('yargs');
-yargs.commandDir('cmds').demandCommand().help().alias('help', 'h').argv;
+var argv = require('yargs/yargs')(process.argv.slice(2));
+argv.commandDir('cmds').demandCommand().help().alias('help', 'h').argv;
+//console.log(argv);
