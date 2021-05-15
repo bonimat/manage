@@ -7,6 +7,4 @@ exports.builder = (yargs) => {
         demandOption: true,
     });
 };
-exports.handler = function (argv) {
-    console.log('and the user is...', argv);
-};
+exports.handler = function (argv) {};
