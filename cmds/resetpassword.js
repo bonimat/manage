@@ -1,10 +1,11 @@
-exports.command = 'resetpassword <email>';
+exports.command = 'resetpassword [email]';
 exports.desc = 'Reset the password from email';
 exports.builder = {
-    dir: {
-        default: '.',
+    email: {
+        alias: 'e',
+        nargs: 1,
     },
 };
 exports.handler = function (argv) {
-    console.log('and the user is...', argv.dir);
+    console.log('and the user is...', argv.e);
 };
